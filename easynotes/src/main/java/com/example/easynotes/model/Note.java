@@ -32,10 +32,10 @@ public class Note implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
-	@NotBlank
+	@NotBlank(message="title field must be requried to add note")
 	private String title;
 	
-	@NotBlank
+	@NotBlank(message="Content must not be blank for any note")
 	private String content;
 	
 	@Column(nullable=false,updatable=false)
