@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(value={"createdAt","updatedAt"},allowGetters=true)
 public abstract class AuditModel implements Serializable {
-
+	private static final long serialVersionUID = 1L;
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="created_at", updatable=false,nullable=false)
 	@CreatedDate

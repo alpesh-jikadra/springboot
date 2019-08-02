@@ -1,15 +1,11 @@
 package com.example.relationship;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-
-@SpringBootApplication
-@EnableJpaAuditing
+/*@SpringBootApplication
+@EnableJpaAuditing*/
 public class RelationShipApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RelationShipApplication.class, args);
+//		SpringApplication.run(RelationShipApplication.class, args);
 	}
 }
 	
